@@ -1,0 +1,52 @@
+# --- Project-specific --------------------------------------------------------
+
+# Local working directory where pipeline outputs are stored
+work_root/
+work_dir/
+
+# Virtual environments
+vret/
+.venv/
+venv/
+ENV/
+env/
+
+# --- Supervisely exports (large & re-generable) ------------------------------
+# keep only what you explicitly copy into masks_multiclass/masks_binary
+*/supervisely_export/
+!*/supervisely_export/meta.json
+!*/supervisely_export/obj_class_to_machine_color.json
+
+# --- Python bytecode / caches -----------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+
+# --- Logs and metadata that can be regenerated -------------------------------
+*.log
+*.csv
+*.jsonl
+*.tmp
+*.swp
+*.swo
+
+# --- OS / editor cruft -------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Build / packaging artifacts --------------------------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# --- Jupyter / Colab --------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_convert/
